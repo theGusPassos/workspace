@@ -7,6 +7,7 @@ My personal Claude Code configuration, version-controlled.
 - `CLAUDE.md` — global instructions (who I am, environment, how I like Claude to work)
 - `settings.json` — Claude Code settings + permission allowlist
 - `memory/` — persistent memory facts (`MEMORY.md` is the index)
+- `skills/` — custom skills, one directory per skill (e.g. `spec-interview`)
 
 ## How it works
 
@@ -20,6 +21,6 @@ git clone <this-repo> ~/projects/workspace
 ~/projects/workspace/setup.sh
 ```
 
-`setup.sh` symlinks `CLAUDE.md`, `settings.json`, and `memory/` into `~/.claude`.
+`setup.sh` symlinks `CLAUDE.md`, `settings.json`, `memory/`, and each skill in `skills/` into `~/.claude`.
 It's idempotent (safe to re-run) and backs up any existing real files it would
 replace. The memory target path is derived from the repo's parent directory.

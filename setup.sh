@@ -36,4 +36,10 @@ link "$REPO/CLAUDE.md"     "$CLAUDE_DIR/CLAUDE.md"
 link "$REPO/settings.json" "$CLAUDE_DIR/settings.json"
 link "$REPO/memory"        "$MEM_TARGET"
 
+# Skills are linked one by one: ~/.claude/skills may hold other (synced) skills.
+for skill in "$REPO"/skills/*/; do
+  [ -d "$skill" ] || continue
+  link "${skill%/}" "$CLAUDE_DIR/skills/$(basename "$skill")"
+done
+
 echo "Done."
