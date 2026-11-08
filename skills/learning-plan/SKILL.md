@@ -28,10 +28,6 @@ Optional one-line description.
 
 ### 1.1 <Module name> (week 1)
 - [Resource title](https://url): why it matters. **must-read**
-- [ ] A task with no link
-**Build:** <small hands-on project ending the module>
-
-**Phase 1 capstone:** <project combining the phase>
 
 ## Books
 | Level | Book | Notes |
@@ -43,7 +39,8 @@ Optional one-line description.
 ```
 
 Rules:
+- **Resources only.** Every item is something to read, watch or use (doc, article, video, course, book). No tasks, builds, capstones, exercises or "do X" items unless the user explicitly asks for them.
+- **Every item in a phase needs a link**, because the importer turns link-less bullets into tasks. If you're not sure of a URL: for a video or talk, link a YouTube search (`https://www.youtube.com/results?search_query=<title+speaker>`); for a book, put it in the Books table instead.
 - Size to the request: a small skill can be 1 phase with 2-3 modules; skip Books/People sections if there's nothing real to put there.
 - 2-5 resources per module; mark only the essentials **must-read**.
-- Every module ends with a **Build:** line; favor doing over reading.
 - `## ` headings containing Books, Library, Reading, People, Feeds or Resources become reference sections (not counted in progress), so don't use those words in phase names.
