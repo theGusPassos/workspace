@@ -14,7 +14,7 @@ Make a plan from what's already known, save it to the tracker, done. Keep it lig
 3. **Save:** `node ~/.claude/skills/learning-plan/save-plan.mjs <file.md>`. It never overwrites an existing plan (adds `-2`, `-3`...).
 4. **Reply** with the plan title, the saved path, and a 2-3 line outline. Don't paste the whole plan.
 
-If the user wants to add to an *existing* plan instead, edit `data/plans/<id>.json` directly (new items: `{"id": <8 random hex chars>, "kind": ..., "title": ..., "done": false}`), but only when they ask.
+If the user wants to add to an *existing* plan instead, edit `~/selfhost/plan-tracker/data/plans/<id>.json` (or under `$PLAN_TRACKER` if set) directly (new items: `{"id": <8 random hex chars>, "kind": ..., "title": ..., "done": false}`), but only when they ask.
 
 ## Format (parsed by the tracker's importer)
 

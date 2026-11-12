@@ -17,7 +17,7 @@ Turn a rough list of features into clear, design-ready requirements by interview
 ## Per point
 
 1. Quote the point.
-2. Ask 3-6 numbered questions about what's unclear. Focus on:
+2. Ask numbered questions about what's still unclear, only the ones whose answers would change the design. If the point is already clear, say so and move on. Focus on:
    - **Behavior**: what actually happens, including when things go wrong (missed, offline, partial, deleted, edited later).
    - **Experience**: the moment of use (where, how fast, one hand, offline), what the user sees and when it matters to them.
    - **Rules and scope**: what's in, what's explicitly out, what's optional or toggleable.
